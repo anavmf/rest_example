@@ -12,17 +12,8 @@ Class Mobile {
 		5 => 'Samsung Galaxy S6 edge',  
 		6 => 'OnePlus 2');
 		
-	/*
-		you should hookup the DAO here
-	*/
 	public function getAllMobile(){
 		return $this->mobiles;
 	}
-	
-	public function getMobile($id){
-		
-		$mobile = array($id => ($this->mobiles[$id]) ? $this->mobiles[$id] : $this->mobiles[1]);
-		return $mobile;
-	}	
 }
 ?>
