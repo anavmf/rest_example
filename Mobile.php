@@ -12,7 +12,7 @@ Class Mobile {
 		$storage = new StorageClient();
 
 		$bucket = $storage->bucket('fcul-cc02-bucket');
-		$object = $bucket->object('list_mobiles.txt');
+		$object = $bucket->object('list_mobiles.json');
 
 		$string = $object->downloadAsString();
 		return json_decode($string);
